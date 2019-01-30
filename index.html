@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>generated from js</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+	<main class="game">
+		<section class="area main-menu" id="mainMenu">
+			<h1 id="gameTitle"></h1>
+			<nav>
+				<ul>
+					<li><button data-target="main">play</button></li>
+				</ul>
+			</nav>
+		</section>
+
+		<section class="area main-area" id="main">
+			<h1>Main Area</h1>
+
+			<!-- Navigation -->
+			<nav>
+				<button data-target="area1">area 1</button>
+				<button data-target="area2">area 2</button>
+				<button disabled>area 3</button>
+				<button disabled>area 4</button>
+				<button data-target="mainMenu">main menu</button>
+			</nav>
+		</section>
+
+		<section class="area" id="area1">
+			<h1>Area 1</h1>
+			<button data-target="main">go back to main area</button>
+		</section>
+		
+		<section class="area" id="area2">
+			<h1>Area 2</h1>
+			<button data-target="main">go back to main area</button>
+		</section>
+
+		<section class="area">
+			<h1>area</h1>
+		</section>
+
+		<section class="area">
+			<h1>area</h1>
+		</section>
+	</main>
+
+	<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>

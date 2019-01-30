@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	list-style-type: none;
+}
+main.game {
+	position: absolute;
+	width: 800px;
+	height: 600px;
+	border: 1px solid black;
+}
+.area {
+	display: none;
+}
+
+/*===*/
+
+.main-menu {
+	text-align: center;
+}
+
+.main-area {
+	text-align: center;
+}
