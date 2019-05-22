@@ -13,10 +13,11 @@ nav ul li {
 	list-style-type: none;
 }
 main.game {
-	position: absolute;
+	/*position: absolute;*/
 	width: 800px;
 	height: 600px;
 	border: 1px solid black;
+	margin: auto;
 }
 .area {
 	display: none;
