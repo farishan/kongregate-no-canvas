@@ -1,17 +1,21 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
 	padding: 0;
 }
+
 nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 nav ul li {
 	list-style-type: none;
 }
+
 main.game {
 	/*position: absolute;*/
 	width: 800px;
@@ -19,6 +23,7 @@ main.game {
 	border: 1px solid black;
 	margin: auto;
 }
+
 .area {
 	display: none;
 }
@@ -31,4 +36,11 @@ main.game {
 
 .main-area {
 	text-align: center;
+}
+
+/*
+	HELPER
+*/
+.hidden {
+	display: none;
 }

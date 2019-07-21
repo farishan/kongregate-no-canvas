@@ -24,7 +24,8 @@
 				<button data-target="area1">area 1</button>
 				<button data-target="area2">area 2</button>
 				<button disabled>area 3</button>
-				<button disabled>area 4</button>
+				<button class="hidden" disabled>area 4</button>
+				<button data-target="settings">settings</button>
 				<button data-target="mainMenu">main menu</button>
 			</nav>
 		</section>
@@ -45,6 +46,20 @@
 
 		<section class="area">
 			<h1>area</h1>
+		</section>
+
+		<section class="area" id="settings">
+			<h1>Settings</h1>
+			<div>
+				<textarea cols="30" rows="10" placeholder="base64 game data"></textarea>
+			</div>
+			<div>
+				<button onclick="save()">Save</button>
+				<button onclick="load()">Load</button>
+				<button disabled>Import</button>
+				<button disabled>Export</button>
+				<button data-target="main">go back to main area</button>
+			</div>
 		</section>
 	</main>
 
