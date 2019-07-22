@@ -3,67 +3,58 @@
 <head>
 	<title>generated from js</title>
 	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="stylesheet" type="text/css" href="./base.css">
+	<link rel="stylesheet" type="text/css" href="./helper.css">
 	<link rel="stylesheet" type="text/css" href="./main.css">
 	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<main class="game">
-		<section class="area main-menu" id="mainMenu">
-			<h1 id="gameTitle"></h1>
-			<nav>
-				<ul>
-					<li><button data-target="main">play</button></li>
-				</ul>
-			</nav>
-		</section>
+<main class="game">
 
-		<section class="area main-area" id="main">
-			<h1>Main Area</h1>
+	<!-- MAIN MENU -->
+	<section class="screen main-menu" id="mainMenu">
+		<h1 id="gameTitle"></h1>
+		<button data-target="main">play</button>
+	</section>
 
-			<!-- Navigation -->
-			<nav>
-				<button data-target="area1">area 1</button>
-				<button data-target="area2">area 2</button>
-				<button disabled>area 3</button>
-				<button class="hidden" disabled>area 4</button>
-				<button data-target="settings">settings</button>
-				<button data-target="mainMenu">main menu</button>
-			</nav>
-		</section>
-
-		<section class="area" id="area1">
-			<h1>Area 1</h1>
+	<!-- SETTING SCREEN -->
+	<section class="screen" id="settings">
+		<h1>Settings</h1>
+		<textarea style="display:block" cols="30" rows="10" placeholder="base64 game data"></textarea>
+		<div>
+			<button onclick="save()">Save</button>
+			<button onclick="load()">Load</button>
+			<button disabled>Import</button>
+			<button disabled>Export</button>
 			<button data-target="main">go back to main area</button>
-		</section>
-		
-		<section class="area" id="area2">
-			<h1>Area 2</h1>
-			<button data-target="main">go back to main area</button>
-		</section>
+		</div>
+	</section>
 
-		<section class="area">
-			<h1>area</h1>
-		</section>
+	<!-- MAIN SCREEN -->
+	<section class="screen main-screen" id="main">
+		<h1>Main Area</h1>
 
-		<section class="area">
-			<h1>area</h1>
-		</section>
+		<!-- Navigation -->
+		<nav>
+			<button data-target="area1">area 1</button>
+			<button data-target="area2">area 2</button>
+			<button data-target="settings">settings</button>
+			<button data-target="mainMenu">main menu</button>
+		</nav>
+	</section>
 
-		<section class="area" id="settings">
-			<h1>Settings</h1>
-			<div>
-				<textarea cols="30" rows="10" placeholder="base64 game data"></textarea>
-			</div>
-			<div>
-				<button onclick="save()">Save</button>
-				<button onclick="load()">Load</button>
-				<button disabled>Import</button>
-				<button disabled>Export</button>
-				<button data-target="main">go back to main area</button>
-			</div>
-		</section>
-	</main>
+	<!-- GAME SCREENS -->
+	<section class="screen" id="area1">
+		<h1>Area 1</h1>
+		<button data-target="main">go back to main area</button>
+	</section>
+	
+	<section class="screen" id="area2">
+		<h1>Area 2</h1>
+		<button data-target="main">go back to main area</button>
+	</section>
+</main>
 
-	<script type="text/javascript" src="./main.js"></script>
+<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

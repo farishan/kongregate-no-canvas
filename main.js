@@ -3,6 +3,8 @@ document.title = gameTitle;
 document.getElementById('gameTitle').innerHTML = gameTitle;
 document.getElementById('mainMenu').style.display = 'block';
 
+var screens = document.querySelectorAll('.screen');
+
 var player = {
 	name: "Default"
 };
@@ -12,32 +14,42 @@ var game = {
 };
 
 window.onload = (() => {
-	setButtonListener();
+	setScreenNavigators();
 })();
 
 function save(){
-	console.log(game)
-
-	// TODO: convert game object into base64 string
+	localStorage.setItem(gameTitle.split(' ').join('') + '_data', JSON.stringify(game));
 };
 
-function setButtonListener(){
+function load(){
+	let data = JSON.parse(localStorage.getItem(gameTitle.split(' ').join('') + '_data'));
+	console.log(data);
+};
+
+function setScreenNavigators(){
 	var buttons = document.querySelectorAll('button');
 	for (var i = 0; i < buttons.length; i++) {
 		buttons[i].addEventListener('click', (e) => {
 			var target = e.target.dataset.target
 			if(target){
-				hideAreas();
+				hideElements(screens);
 				document.getElementById(e.target.dataset.target).style.display = 'block';
 			}
 		});
 	}
 };
 
-function hideAreas(){
-	var areas = document.querySelectorAll('.area');
-	for (var i = 0; i < areas.length; i++) {
-		areas[i].style.display = 'none';
+function exportData(obj){
+	return btoa(JSON.stringify(obj));
+};
+
+function importData(b64){
+	return JSON.parse(atob(b64));
+};
+
+function hideElements(elements){
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].style.display = 'none';
 	}
 };
 

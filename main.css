@@ -1,7 +1,3 @@
-* {
-	box-sizing: border-box;
-}
-
 main.game {
 	/*position: absolute;*/
 	width: 800px;
@@ -10,23 +6,14 @@ main.game {
 	margin: auto;
 }
 
-.area {
+.screen {
 	display: none;
 }
-
-/*===*/
 
 .main-menu {
 	text-align: center;
 }
 
-.main-area {
+.main-screen {
 	text-align: center;
-}
-
-/*
-	HELPER
-*/
-.hidden {
-	display: none;
 }
