@@ -40,11 +40,16 @@ function setScreenNavigators(){
 };
 
 function exportData(obj){
-	return btoa(JSON.stringify(obj));
+	document.getElementById('b64').value = btoa(JSON.stringify(game));
+	
+	// return btoa(JSON.stringify(obj));
 };
 
 function importData(b64){
-	return JSON.parse(atob(b64));
+	let data = atob(document.getElementById('b64').value);
+	game = JSON.parse(data);
+
+	// return JSON.parse(atob(b64));
 };
 
 function hideElements(elements){

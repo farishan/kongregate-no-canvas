@@ -20,12 +20,12 @@
 	<!-- SETTING SCREEN -->
 	<section class="screen" id="settings">
 		<h1>Settings</h1>
-		<textarea style="display:block" cols="30" rows="10" placeholder="base64 game data"></textarea>
+		<textarea style="display:block" cols="30" rows="10" placeholder="base64 game data" id="b64"></textarea>
 		<div>
 			<button onclick="save()">Save</button>
 			<button onclick="load()">Load</button>
-			<button disabled>Import</button>
-			<button disabled>Export</button>
+			<button onclick="importData()">Import</button>
+			<button onclick="exportData()">Export</button>
 			<button data-target="main">go back to main area</button>
 		</div>
 	</section>
