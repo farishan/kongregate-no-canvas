@@ -6,4 +6,4 @@ Features:
 - Import/Export
 
 To-do List:
-- 
+- Typing mechanic
