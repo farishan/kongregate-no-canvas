@@ -1,13 +1,18 @@
 # KONOCA
 
-## HTML5 Game Engine (I mean, starter template)
-
-This is a game engine, or actually just a starter template for Kongregate. There is no HTML5 Canvas API used here, because the developer is a noob web developer who want to create simple games.
+## HTML5 Game Starter
+This is a HTML5 game starter template without Canvas API, for (Kongregate)[https://kongregate.com].
 
 ### Features:
 - Area/screen navigation
 - Save/Load
 - Import/Export
+- Main Loop & Time
 
 ### To-do List:
 - Typing mechanic
+
+---
+
+### Thanks to:
+- Isaac Sukin (http://www.isaacsukin.com/) for the MainLoop.js
