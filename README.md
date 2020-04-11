@@ -10,7 +10,10 @@ This is a HTML5 game starter template without Canvas API, for (Kongregate)[https
 - Main Loop & Time
 
 ### To-do List:
-- Typing mechanic
+- Register Saloimex to npm
+- Split time functionality
+- Add Notification module
+- Add typing mechanic
 
 ---
 
