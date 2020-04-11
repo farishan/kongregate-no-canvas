@@ -1,7 +1,7 @@
-# KONOCA
+# KONOCA - A HTML5 Game Starter
 
-## HTML5 Game Starter
-This is a HTML5 game starter template without Canvas API, for (Kongregate)[https://kongregate.com].
+This is a HTML5 game starter template without Canvas API,
+for [Kongregate](https://kongregate.com).
 
 ### Features:
 - Area/screen navigation
@@ -19,3 +19,7 @@ This is a HTML5 game starter template without Canvas API, for (Kongregate)[https
 
 ### Thanks to:
 - Isaac Sukin (http://www.isaacsukin.com/) for the MainLoop.js
+
+---
+
+[License](/LICENSE.md)
