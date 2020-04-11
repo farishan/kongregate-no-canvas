@@ -1,5 +1,8 @@
 ### Node ###
 
+# Cache
+.cache
+
 # Logs
 logs
 npm-debug.log*
