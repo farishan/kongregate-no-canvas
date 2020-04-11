@@ -16,7 +16,47 @@ var game = {
 
 window.onload = (() => {
 	setScreenNavigators();
+	setTime();
 })();
+
+function setTime(){
+	// Dependecy: MainLoop.js
+	let milliseconds = 0;
+	let seconds = 0;
+	let minutes = 0;
+	let hours = 0;
+
+	// in-game multiplier
+	let multiplier = 1;
+	MainLoop.setUpdate(function(){
+		milliseconds += MainLoop.getSimulationTimestep()*multiplier;
+		if(milliseconds >= 1000){
+			milliseconds = 0;
+			seconds++;
+			if(seconds >= 60){
+				seconds = 0;
+				minutes++;
+				if(minutes >= 60){
+					minutes = 0;
+					hours++;
+					if(hours > 23){
+						hours = 0;
+					}
+				}
+			}
+		}
+		const time = `${hours}:${minutes}:${seconds}:${milliseconds.toFixed()}`
+		console.log(time)
+	})
+	MainLoop.start()
+
+	setTimeout(function(){
+		MainLoop.stop()
+		// setTimeout(function(){
+		// 	MainLoop.start()
+		// }, 3000)
+	}, 3000)
+}
 
 function setScreenNavigators(){
 	var buttons = document.querySelectorAll('button');
