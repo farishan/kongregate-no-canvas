@@ -3,7 +3,10 @@
 This is a HTML5 game starter template without Canvas API,
 for [Kongregate](https://kongregate.com).
 
-Link: [Konoca Project](https://github.com/users/farishan/projects/3)
+Link: 
+- [Konoca](https://farishan.github.io/konoca)
+- [Movement](https://farishan.github.io/movement)
+- [Konoca Project](https://github.com/users/farishan/projects/3)
 
 ### Features:
 - Area/screen navigation
