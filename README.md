@@ -27,4 +27,4 @@ Link:
 
 ---
 
-[License](/LICENSE.md)
+[License](/LICENSE)
