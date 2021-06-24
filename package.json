@@ -1,0 +1,8 @@
+{
+  "name": "konoca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/farishan/konoca.git",
+  "author": "Faris Hanugraha <farishanugraha@gmail.com>",
+  "license": "MIT"
+}

@@ -1,13 +1,30 @@
-# KONOCA
+# KONOCA - A HTML5 Game Starter
 
-## HTML5 Game Engine (I mean, starter template)
+This is a HTML5 game starter template without Canvas API,
+for [Kongregate](https://kongregate.com).
 
-This is a game engine, or actually just a starter template for Kongregate. There is no HTML5 Canvas API used here, because the developer is a noob web developer who want to create simple games.
+Link: 
+- [Konoca](https://farishan.github.io/konoca)
+- [Movement](https://farishan.github.io/movement)
+- [Konoca Project](https://github.com/users/farishan/projects/3)
 
 ### Features:
 - Area/screen navigation
 - Save/Load
 - Import/Export
+- Main Loop & Time
 
 ### To-do List:
-- Typing mechanic
+- Register Saloimex to npm
+- Split time functionality
+- Add Notification module
+- Add typing mechanic
+
+---
+
+### Thanks to:
+- Isaac Sukin (http://www.isaacsukin.com/) for the MainLoop.js
+
+---
+
+[License](/LICENSE)
